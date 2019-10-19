@@ -9,7 +9,7 @@ class MP3Importer
     Dir["#{@path}/*.mp3"].map { |file|
       file.slice @path
       file
-      
+
     }
   end
   def import
