@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    Dir["#{@path}/*.mp3"].map { |file|
+    Dir["#{@path}/*.mp3"].each { |file|
       file.slice @path
     }
   end
